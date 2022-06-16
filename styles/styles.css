@@ -1,3 +1,68 @@
+:root {
+	--gap-1: 3em;
+	--gap-2: 2.5em;
+	--gap-3: 2em;
+	--gap-4: 1.5em;
+	--gap-5: 1em;
+	--gap-6: 0.5em;
+
+	--padding-1: 1em;
+	--padding-2: 0.25em;
+}
+
 header {
-	display: grid;
+	display: flex;
+	width: 100%;
+}
+
+.logo {
+	width: 23%;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	gap: var(--gap-6);
+}
+
+.logo img {
+	height: 50px;
+}
+
+.navigation {
+	width: 77%;
+}
+
+.secondary-nav {
+	justify-content: end;
+	width: 100%;
+}
+
+.social-media {
+	display: flex;
+	align-items: center;
+	margin-right: auto;
+	gap: var(--gap-5);
+}
+
+.main-nav {
+	width: 100%;
+}
+
+.main-nav ul {
+	width: 100%;
+	display: flex;
+	list-style: none;
+	margin: 0;
+	padding: 0;
+}
+
+.main-nav__element {
+	width: 16%;
+	padding: 1.25em;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+
+.main-nav__element:last-child {
+	width: 6%;
 }
