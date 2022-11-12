@@ -8,8 +8,15 @@
 
 	--padding-1: 1em;
 	--padding-2: 0.25em;
+
+	--border-1: 1px solid #29283d;
+	--clr-darkblue-1: #0a0927;
+    --clr-darkblue-2: #181733;
+    --clr-red: #cd122d;
+    --clr-blue: #154284;
 }
 
+/* HEADER CLASSES */
 header {
 	display: flex;
 	width: 100%;
@@ -21,19 +28,29 @@ header {
 	align-items: center;
 	justify-content: center;
 	gap: var(--gap-6);
+	border: var(--border-1);
+	background-color: var(--clr-darkblue-2);
 }
 
 .logo img {
 	height: 50px;
 }
+.logo a{
+	color: whitesmoke;
+}
 
 .navigation {
 	width: 77%;
+}
+.container{
+	background-color: var(--clr-darkblue-1);
+	height: 40%;
 }
 
 .secondary-nav {
 	justify-content: end;
 	width: 100%;
+	border: var(--border-1);
 }
 
 .social-media {
@@ -41,15 +58,47 @@ header {
 	align-items: center;
 	margin-right: auto;
 	gap: var(--gap-5);
+	padding-left: var(--gap-6);
 }
+.signup{
+	display: flex;
+	align-items: center;
+}
+.signup button{
+	border: none;
+}
+.login{
+	background-color: var(--clr-darkblue-1);
+	font-size: 16px;
+	font-weight: bold;
+}
+.account{
+	background-color: var(--clr-red);
+	height: 30px;
+	border-radius: 3px;
+	font-size: 16px;
+	font-weight: bold;
+}
+.language{
+	padding: 0 var(--gap-5);
+}
+.more{
+	text-align: center;
+}
+
 
 .main-nav {
 	width: 100%;
+	height: 60%;
+	background-color: var(--clr-darkblue-2);
 }
 
 .main-nav ul {
 	width: 100%;
+	height: 100%;
 	display: flex;
+	align-items: center;
+	justify-content: center;
 	list-style: none;
 	margin: 0;
 	padding: 0;
@@ -57,12 +106,15 @@ header {
 
 .main-nav__element {
 	width: 16%;
-	padding: 1.25em;
+	height: 100%;
 	display: flex;
 	align-items: center;
 	justify-content: center;
+	border: var(--border-1);
 }
 
 .main-nav__element:last-child {
 	width: 6%;
 }
+
+
